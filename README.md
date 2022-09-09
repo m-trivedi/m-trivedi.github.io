@@ -1,1 +1,0 @@
-# truvsere.github.io
