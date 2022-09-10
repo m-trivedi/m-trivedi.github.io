@@ -56,3 +56,10 @@ button:hover {
 .text {
     margin-bottom: 60px;
 }
+
+.links {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid white;
+}
