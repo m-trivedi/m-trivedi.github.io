@@ -5,16 +5,19 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
-    /* background-color: #08092e; */
     background-color: #1a1a1a;
     color: white;
 }
 
 h1 {
     font-size: 50px;
-    margin-top: 110px;
+    padding-top: 110px;
     font-weight: 100;
 }
 
@@ -25,11 +28,53 @@ h2 {
     margin-bottom: 15px;
 }
 
+#header {
+    height: 60px;
+    width: calc(100% - 200px);
+    position: fixed;
+    top: 0;
+    background-color: #282828;
+    line-height: 60px; 
+    font-size: 20px;
+    text-align: left;
+    padding: 0px 100px;
+    color:#faad14;
+}
+
+#home {
+    text-align: left; 
+    padding: 0px 100px; 
+    width: calc(100% - 200px);
+}
+
+#projects {
+    padding-top: 100px;
+    z-index: -1;
+    margin-top: -50px;
+}
+
+#skills {
+    padding-top: 100px;
+    z-index: -2;
+    margin-top: -50px;
+}
+
+#extracurricular {
+    padding-top: 100px;
+    z-index: -3;
+    margin-top: -50px;
+}
+
+#awards {
+    padding-top: 100px;
+    z-index: -4;
+    margin-top: -50px;
+}
+
 button {
     font-family: 'Fira Sans', sans-serif;
     background-color: #faad14;
     font-size: 16px;
-    /* color: #08092e; */
     color: #1a1a1a;
     padding: 10px 20px;
     border-radius: 20px;
@@ -51,22 +96,32 @@ button:hover {
     font-size: 30px;
     color: #faad14;
     background-color: #1a1a1a;
-    /* background-color: #08092e; */
     padding: 0px 10px;
     margin-left: 90px;
     display: inline-block;
 }
 .content {
-    padding: 40px 100px 40px 100px;
+    padding: 40px 100px;
+    line-height: 25px;
 }
 .text {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     font-size: 16px;
 }
 
-.links {
+.link {
     color: white;
     text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid white;
+}
+.link:hover {
+    color: #faad14;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+.navlink:hover {
+    color: #faad14;
 }
