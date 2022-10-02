@@ -7,41 +7,15 @@
         <meta name = "keywords" content = "Mihir, Trivedi, Portfolio">
         <meta name = "author" content = "Mihir Trivedi">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" href = "styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            .fa {
-                padding: 10px;
-                font-size: 25px;
-                width: 25px;
-                height: 25px;
-                text-align: center;
-                text-decoration: none;
-                border-radius: 25px;
-                background-color: white;
-                transition: border-radius 0.5s;
-                margin: 10px 15px;
-            }
-                
-            .fa:hover {
-                border-radius: 0px;
-            }
-                
-            .fa-linkedin {
-                margin-left: 0px;
-                color: #1a1a1a;
-            }
-
-            .fa-github {
-                color: #1a1a1a;
-            }
-        </style>
+        
     </head>
     <body>
         <!-- Header Section -->
         <div id = "header">
             m-trivedi
-            <div style = "float:right;font-size: 16px;">
+            <div id = "navigation" style = "float:right;font-size: 16px;">
                 <a href = "#home" class = "navlink">Home</a>
                 <a href = "#projects" class = "navlink">Projects</a>
                 <a href = "#skills" class = "navlink">Skills</a>
@@ -197,5 +171,12 @@
             <a href="https://www.linkedin.com/in/m-trivedi/" target = "_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/m-trivedi/" target = "_blank" class="fa fa-github"></a>
         </div>
+
+        <script>
+            var w = window.innerWidth;
+            if (w < 800) {
+                document.getElementById("navigation").style.visibility = "hidden";
+            }
+        </script>
     </body>
 </html>
