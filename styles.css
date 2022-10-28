@@ -28,6 +28,7 @@ h2 {
     margin-bottom: 15px;
 }
 
+
 #header {
     height: 60px;
     width: calc(100% - 14vw);
@@ -150,4 +151,8 @@ button:hover {
 
 .fa-github {
     color: #1a1a1a;
+}
+.screenshot {
+    border-radius: 20px;
+    height: 100px;
 }
